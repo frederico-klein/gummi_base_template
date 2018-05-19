@@ -13,8 +13,8 @@ echo "** Creating combine YAML files from gummi_ee and gummi_base."
 
 #export SRCPATH=`echo -e "${ROS_PACKAGE_PATH//:/$'\n'}" | grep /src`
 export SRCPATH=${PWD}/..
-export GUMMIBASEPATH=${SRCPATH}/gummi_base_${ROS_GUMMI_BASE}
-export GUMMIEEPATH=${SRCPATH}/gummi_ee_${ROS_GUMMI_EE}
+export GUMMIBASEPATH=${SRCPATH}/gummi_rightbase_${ROS_GUMMI_RIGHTBASE}
+export GUMMIEEPATH=${SRCPATH}/gummi_rightee_${ROS_GUMMI_RIGHTEE}
 
 # LIST OF GENERATED YAML FILES AS:
 #

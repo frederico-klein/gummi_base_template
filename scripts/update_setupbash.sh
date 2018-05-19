@@ -4,8 +4,8 @@
 ## exectution. Don't add variables or definitions here. Use set_env_gummi.
 
 #echo ${PWD}
-echo "** Updating devel/setup.bash to contain ROS_GUMMI_BASE enviroment parameter."
-echo "## Automatically added by gummi_base_XXX package" >> ../../devel/setup.bash
+echo "** Updating devel/setup.bash to contain ROS_GUMMI_RIGHTBASE enviroment parameter."
+echo "## Automatically added by gummi_rightbase_XXX package" >> ../../devel/setup.bash
 echo "$(tail -n +2 scripts/set_env_gummi.sh)"   >> ../../devel/setup.bash
 
 #cat ../../devel/setup.bash

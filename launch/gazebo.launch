@@ -1,7 +1,7 @@
 <launch>
-  <arg name="base" value="$(env ROS_GUMMI_BASE)" />
-  <arg name="param_for_model" value="$(eval '-file' + find('gummi_base_' + base) + 'urdf/gummi_description.urdf -urdf -model gummi_description')"/>
-  <include file = "$(eval find('gummi_base_' + base) + '/launch/controllers_base.launch')">
+  <arg name="base" value="$(env ROS_GUMMI_RIGHTBASE)" />
+  <arg name="param_for_model" value="$(eval '-file' + find('gummi_rightbase_' + base) + 'urdf/gummi_description.urdf -urdf -model gummi_description')"/>
+  <include file = "$(eval find('gummi_rightbase_' + base) + '/launch/controllers_base.launch')">
     <arg name="msg" value="$(arg param_for_model)"/>
   </include>
 

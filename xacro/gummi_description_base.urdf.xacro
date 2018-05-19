@@ -22,7 +22,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/base_link.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -36,7 +36,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/base_link.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -62,7 +62,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder_preroll.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder_preroll.STL" />
       </geometry>
       <material
         name="">
@@ -76,7 +76,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder_preroll.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder_preroll.STL" />
       </geometry>
     </collision>
   </link>
@@ -120,7 +120,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder.STL" />
       </geometry>
       <material
         name="">
@@ -134,7 +134,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder.STL" />
       </geometry>
     </collision>
   </link>
@@ -178,7 +178,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/upperarm_preroll.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/upperarm_preroll.STL" />
       </geometry>
       <material
         name="">
@@ -192,7 +192,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/upperarm_preroll.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/upperarm_preroll.STL" />
       </geometry>
     </collision>
   </link>
@@ -236,7 +236,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/upperarm.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/upperarm.STL" />
       </geometry>
       <material
         name="">
@@ -250,7 +250,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/upperarm.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/upperarm.STL" />
       </geometry>
     </collision>
   </link>
@@ -294,7 +294,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/lowerarm_preroll_u.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/lowerarm_preroll_u.STL" />
       </geometry>
       <material
         name="">
@@ -308,7 +308,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/lowerarm_preroll_u.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/lowerarm_preroll_u.STL" />
       </geometry>
     </collision>
   </link>
@@ -353,7 +353,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/upperarm_biceps_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/upperarm_biceps_pulley.STL" />
       </geometry>
       <material
         name="">
@@ -367,7 +367,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/upperarm_biceps_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/upperarm_biceps_pulley.STL" />
       </geometry>
     </collision>
   </link>
@@ -406,7 +406,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/upperarm_triceps_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/upperarm_triceps_pulley.STL" />
       </geometry>
       <material
         name="">
@@ -420,7 +420,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/upperarm_triceps_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/upperarm_triceps_pulley.STL" />
       </geometry>
     </collision>
   </link>
@@ -462,7 +462,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder_roll_top_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder_roll_top_pulley.STL" />
       </geometry>
       <material
         name="">
@@ -476,7 +476,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder_roll_top_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder_roll_top_pulley.STL" />
       </geometry>
     </collision>
   </link>
@@ -515,7 +515,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder_roll_bottom_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder_roll_bottom_pulley.STL" />
       </geometry>
       <material
         name="">
@@ -529,7 +529,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder_roll_bottom_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder_roll_bottom_pulley.STL" />
       </geometry>
     </collision>
   </link>
@@ -571,7 +571,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder_pitch_front_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder_pitch_front_pulley.STL" />
       </geometry>
       <material
         name="">
@@ -585,7 +585,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder_pitch_front_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder_pitch_front_pulley.STL" />
       </geometry>
     </collision>
   </link>
@@ -624,7 +624,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder_pitch_back_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder_pitch_back_pulley.STL" />
       </geometry>
       <material
         name="">
@@ -638,7 +638,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gummi_base_$(env ROS_GUMMI_BASE)/meshes/shoulder_pitch_back_pulley.STL" />
+          filename="package://gummi_rightbase_$(env ROS_GUMMI_RIGHTBASE)/meshes/shoulder_pitch_back_pulley.STL" />
       </geometry>
     </collision>
   </link>

@@ -1,6 +1,6 @@
-# gummi_base_template
+# gummi_rightbase_template
 
-This replaces the old gummi_description package, now separated into gummi_base_XXX and gummi_ee_XXX for easier change of end effectors.
+This replaces the old gummi_description package, now separated into gummi_rightbase_XXX and gummi_rightee_XXX for easier change of end effectors.
 
 ## Setting-up
 
@@ -11,11 +11,11 @@ First set up a workspace
 
 Fork or clone this repository:
 
-`$ git clone https://github.com/GummiArmCE/gummi_base_template.git` 
+`$ git clone https://github.com/GummiArmCE/gummi_rightbase_template.git` 
 
 Download a suitable ee package, e. g., handshake:
 
-`$ git clone https://github.com/GummiArmCE/gummi_ee_handshake.git`
+`$ git clone https://github.com/GummiArmCE/gummi_rightee_handshake.git`
 
 To actually move the robot you will need either ros-\<YOUR-ROS-DISTRO\>-dynamixel-motor package installed or to you can clone the git from https://github.com/arebgun/dynamixel_motor.git . You will also need the gummi_interface package and if you want to use move-it, the gummi_moveit package: 
 
@@ -46,23 +46,23 @@ This is a nice tweak of your shell to show the current branch in which you are w
 
 ## Setting up a new base
 
-Rename the directory "gummi_base_template" to "gummi_base_YOUR_OWN_BASE"
+Rename the directory "gummi_rightbase_template" to "gummi_rightbase_YOUR_OWN_BASE"
 
-`$ mv gummi_base_template gummi_base_YOUR_OWN_BASE`
+`$ mv gummi_rightbase_template gummi_rightbase_YOUR_OWN_BASE`
 
-Edit the file "gummi_base_YOUR_OWN_BASE/set_env_gummi.sh"
+Edit the file "gummi_rightbase_YOUR_OWN_BASE/set_env_gummi.sh"
 
-`$ gedit gummi_base_YOUR_OWN_BASE/set_env_gummi.sh`
+`$ gedit gummi_rightbase_YOUR_OWN_BASE/set_env_gummi.sh`
 
-And change the line containing "export ROS_GUMMI_BASE=template" to "export ROS_GUMMI_BASE=YOUR_OWN_BASE" (required for launch files and by yaml_gen)
+And change the line containing "export ROS_GUMMI_RIGHTBASE=template" to "export ROS_GUMMI_RIGHTBASE=YOUR_OWN_BASE" (required for launch files and by yaml_gen)
 
 Edit the file package.xml
 
 `$ gedit package.xml`
 
-And change `<name>gummi_base_template</name>` to  `<name>gummi_base_YOUR_OWN_BASE</name>` (required finding the meshes - and textures if any- in the urdf file). 
+And change `<name>gummi_rightbase_template</name>` to  `<name>gummi_rightbase_YOUR_OWN_BASE</name>` (required finding the meshes - and textures if any- in the urdf file). 
 
-You can now proceed to change "gummi_base_YOUR_OWN_BASE/launch/controllers_base.launch" to contain the motor drivers that your base has and where they are connected in the bus and the updating the yaml definitions of joints in "gummi_base_YOUR_OWN_BASE/dynamixel"
+You can now proceed to change "gummi_rightbase_YOUR_OWN_BASE/launch/controllers_base.launch" to contain the motor drivers that your base has and where they are connected in the bus and the updating the yaml definitions of joints in "gummi_rightbase_YOUR_OWN_BASE/dynamixel"
 
 ## Changing Urdf definitions:
 
