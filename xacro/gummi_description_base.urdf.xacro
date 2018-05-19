@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot>
   <link
-    name="base_link">
+    name="right_base_link">
     <inertial>
       <origin
         xyz="-9.81410393552373E-06 -0.0460000689343235 -0.0065295158451983"
@@ -87,7 +87,7 @@
       xyz="-0.00027025 -0.10997 0.008"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="right_base_link" />
     <child
       link="shoulder_preroll" />
     <axis
