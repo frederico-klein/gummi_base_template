@@ -10,7 +10,7 @@
 <joint name="rightbase_displacement" type="fixed">
   <origin rpy="0 0 0" xyz="0.2 0 0"/>
   <parent link="base_link"/>
-  <child link="right_base_link"/>
+  <child link="right/base_link"/>
   <axis xyz="0 0 0"/>
 </joint>
 </robot>

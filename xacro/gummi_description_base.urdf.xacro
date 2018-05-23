@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot>
   <link
-    name="right_base_link">
+    name="right/base_link">
     <inertial>
       <origin
         xyz="-9.81410393552373E-06 -0.0460000689343235 -0.0065295158451983"
@@ -41,7 +41,7 @@
     </collision>
   </link>
   <link
-    name="shoulder_preroll">
+    name="right/shoulder_preroll">
     <inertial>
       <origin
         xyz="-2.1762E-05 -0.0041376 0.031717"
@@ -81,15 +81,15 @@
     </collision>
   </link>
   <joint
-    name="shoulder_yaw"
+    name="right/shoulder_yaw"
     type="revolute">
     <origin
       xyz="-0.00027025 -0.10997 0.008"
       rpy="0 0 0" />
     <parent
-      link="right_base_link" />
+      link="right/base_link" />
     <child
-      link="shoulder_preroll" />
+      link="right/shoulder_preroll" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -99,7 +99,7 @@
       velocity="0" />
   </joint>
   <link
-    name="shoulder">
+    name="right/shoulder">
     <inertial>
       <origin
         xyz="-6.6912E-05 -0.10412 4.2145E-06"
@@ -139,15 +139,15 @@
     </collision>
   </link>
   <joint
-    name="shoulder_roll"
+    name="right/shoulder_roll"
     type="revolute">
     <origin
       xyz="-2.6378E-05 0.057605 0.1302"
       rpy="0 0 0" />
     <parent
-      link="shoulder_preroll" />
+      link="right/shoulder_preroll" />
     <child
-      link="shoulder" />
+      link="right/shoulder" />
     <axis
       xyz="0 -1 0" />
     <limit
@@ -157,7 +157,7 @@
       velocity="0" />
   </joint>
   <link
-    name="upperarm_preroll">
+    name="right/upperarm_preroll">
     <inertial>
       <origin
         xyz="0.031774 -0.0098005 -0.046115"
@@ -197,15 +197,15 @@
     </collision>
   </link>
   <joint
-    name="shoulder_pitch"
+    name="right/shoulder_pitch"
     type="revolute">
     <origin
       xyz="-0.024 -0.17679 8.6827E-05"
       rpy="0 0 0" />
     <parent
-      link="shoulder" />
+      link="right/shoulder" />
     <child
-      link="upperarm_preroll" />
+      link="right/upperarm_preroll" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -215,7 +215,7 @@
       velocity="0" />
   </joint>
   <link
-    name="upperarm">
+    name="right/upperarm">
     <inertial>
       <origin
         xyz="-0.0024737 -8.3239E-05 -0.1319"
@@ -255,15 +255,15 @@
     </collision>
   </link>
   <joint
-    name="upperarm_roll"
+    name="right/upperarm_roll"
     type="revolute">
     <origin
       xyz="0.056992 -0.010088 -0.035587"
       rpy="0 0 0" />
     <parent
-      link="upperarm_preroll" />
+      link="right/upperarm_preroll" />
     <child
-      link="upperarm" />
+      link="right/upperarm" />
     <axis
       xyz="0 0 -1" />
     <limit
@@ -273,7 +273,7 @@
       velocity="0" />
   </joint>
   <link
-    name="lowerarm_preroll_u">
+    name="right/lowerarm_preroll_u">
     <inertial>
       <origin
         xyz="0.030339 -0.01865 -0.003795"
@@ -313,15 +313,15 @@
     </collision>
   </link>
   <joint
-    name="elbow"
+    name="right/elbow"
     type="revolute">
     <origin
       xyz="-0.006 0.0184 -0.23533"
       rpy="0 0 0" />
     <parent
-      link="upperarm" />
+      link="right/upperarm" />
     <child
-      link="lowerarm_preroll_u" />
+      link="right/lowerarm_preroll_u" />
     <axis
       xyz="0 -1 0" />
     <limit
@@ -332,7 +332,7 @@
   </joint>
 
   <link
-    name="upperarm_biceps_pulley">
+    name="right/upperarm_biceps_pulley">
     <inertial>
       <origin
         xyz="-0.0093595 8.3904E-05 3.1839E-09"
@@ -372,20 +372,20 @@
     </collision>
   </link>
   <joint
-    name="upperarm_biceps_pulley_joint"
+    name="right/upperarm_biceps_pulley_joint"
     type="fixed">
     <origin
       xyz="0.0375 0 -0.10243"
       rpy="0 0 0" />
     <parent
-      link="upperarm" />
+      link="right/upperarm" />
     <child
-      link="upperarm_biceps_pulley" />
+      link="right/upperarm_biceps_pulley" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="upperarm_triceps_pulley">
+    name="right/upperarm_triceps_pulley">
     <inertial>
       <origin
         xyz="0.0093595 8.3904E-05 -3.1839E-09"
@@ -425,15 +425,15 @@
     </collision>
   </link>
   <joint
-    name="upperarm_triceps_pulley_joint"
+    name="right/upperarm_triceps_pulley_joint"
     type="fixed">
     <origin
       xyz="-0.0435 0 -0.12843"
       rpy="0 0 0" />
     <parent
-      link="upperarm" />
+      link="right/upperarm" />
     <child
-      link="upperarm_triceps_pulley" />
+      link="right/upperarm_triceps_pulley" />
     <axis
       xyz="-1 0 0" />
     <limit
@@ -441,7 +441,7 @@
       velocity="0" />
   </joint>
   <link
-    name="shoulder_roll_top_pulley">
+    name="right/shoulder_roll_top_pulley">
     <inertial>
       <origin
         xyz="-8.3904E-05 -3.1839E-09 -0.0093595"
@@ -481,20 +481,20 @@
     </collision>
   </link>
   <joint
-    name="shoulder_roll_top_pulley_joint"
+    name="right/shoulder_roll_top_pulley_joint"
     type="fixed">
     <origin
       xyz="0.0208 -0.06848 0.043"
       rpy="0 0 0" />
     <parent
-      link="shoulder" />
+      link="right/shoulder" />
     <child
-      link="shoulder_roll_top_pulley" />
+      link="right/shoulder_roll_top_pulley" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="shoulder_roll_bottom_pulley">
+    name="right/shoulder_roll_bottom_pulley">
     <inertial>
       <origin
         xyz="8.3904E-05 -3.1839E-09 0.0093595"
@@ -534,15 +534,15 @@
     </collision>
   </link>
   <joint
-    name="shoulder_roll_bottom_pulley"
+    name="right/shoulder_roll_bottom_pulley"
     type="fixed">
     <origin
       xyz="-0.0208 -0.06848 -0.043"
       rpy="0 0 0" />
     <parent
-      link="shoulder" />
+      link="right/shoulder" />
     <child
-      link="shoulder_roll_bottom_pulley" />
+      link="right/shoulder_roll_bottom_pulley" />
     <axis
       xyz="0 0 -1" />
     <limit
@@ -550,7 +550,7 @@
       velocity="0" />
   </joint>
   <link
-    name="shoulder_pitch_front_pulley">
+    name="right/shoulder_pitch_front_pulley">
     <inertial>
       <origin
         xyz="-0.0087313 -9.2787E-11 -0.00016773"
@@ -590,20 +590,20 @@
     </collision>
   </link>
   <joint
-    name="shoulder_pitch_pulley_front_joint"
+    name="right/shoulder_pitch_pulley_front_joint"
     type="fixed">
     <origin
       xyz="0.067474 -0.024095 0.044"
       rpy="0 0 0" />
     <parent
-      link="shoulder_preroll" />
+      link="right/shoulder_preroll" />
     <child
-      link="shoulder_pitch_front_pulley" />
+      link="right/shoulder_pitch_front_pulley" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="shoulder_pitch_back_pulley">
+    name="right/shoulder_pitch_back_pulley">
     <inertial>
       <origin
         xyz="0.0087313 9.2787E-11 -0.00016773"
@@ -643,15 +643,15 @@
     </collision>
   </link>
   <joint
-    name="shoulder_pitch_back_pulley_joint"
+    name="right/shoulder_pitch_back_pulley_joint"
     type="fixed">
     <origin
       xyz="-0.067526 -0.024095 0.044"
       rpy="0 0 0" />
     <parent
-      link="shoulder_preroll" />
+      link="right/shoulder_preroll" />
     <child
-      link="shoulder_pitch_back_pulley" />
+      link="right/shoulder_pitch_back_pulley" />
     <axis
       xyz="0 0 0" />
   </joint>
